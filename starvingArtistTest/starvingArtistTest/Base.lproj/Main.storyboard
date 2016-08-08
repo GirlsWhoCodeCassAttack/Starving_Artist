@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EtR-7b-PpJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="starvingArtistTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starvingartistbkg2" translatesAutoresizingMaskIntoConstraints="NO" id="84X-Ni-5B9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="targetcrop" translatesAutoresizingMaskIntoConstraints="NO" id="Gh6-PP-bRO">
+                                <rect key="frame" x="-10" y="61" width="423" height="556"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gh6-PP-bRO" secondAttribute="height" multiplier="423:556" id="iUt-Rk-8wa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artistlevel4crop" translatesAutoresizingMaskIntoConstraints="NO" id="apr-6d-m8R">
+                                <rect key="frame" x="80" y="217" width="227" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="apr-6d-m8R" secondAttribute="height" multiplier="227:257" id="eVs-xH-JPw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7b-z6-hhU">
+                                <rect key="frame" x="107" y="547" width="200" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="2Ic-KH-jcu"/>
+                                    <constraint firstAttribute="width" constant="200" id="L0J-C4-VzS"/>
+                                    <constraint firstAttribute="width" secondItem="M7b-z6-hhU" secondAttribute="height" multiplier="200:181" id="OyI-8E-ptF"/>
+                                    <constraint firstAttribute="width" secondItem="M7b-z6-hhU" secondAttribute="height" multiplier="200:181" id="utu-wF-Bgn"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="buttoncrop"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2Ic-KH-jcu"/>
+                                        <exclude reference="L0J-C4-VzS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="drawClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJh-N5-s1T"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starvingartistbar1" translatesAutoresizingMaskIntoConstraints="NO" id="yjA-rP-J5I">
+                                <rect key="frame" x="77" y="116" width="317" height="285"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I drew!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yin-UT-tG8">
+                                <rect key="frame" x="163" y="594" width="89" height="60"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-AD-0GO">
+                                <rect key="frame" x="107" y="109" width="200" height="21"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VP-5v-eKS">
+                                <rect key="frame" x="80" y="465" width="245" height="52"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yin-UT-tG8" firstAttribute="leading" secondItem="M7b-z6-hhU" secondAttribute="trailing" constant="-144" id="2da-ub-nNj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gh6-PP-bRO" secondAttribute="trailing" constant="-19" id="2e1-VF-Z2S"/>
+                            <constraint firstItem="yin-UT-tG8" firstAttribute="centerX" secondItem="M7b-z6-hhU" secondAttribute="centerX" id="7YY-9Q-Ore"/>
+                            <constraint firstItem="apr-6d-m8R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="197" id="HjR-fu-UBk"/>
+                            <constraint firstItem="yjA-rP-J5I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="HnD-cP-hwv"/>
+                            <constraint firstItem="yin-UT-tG8" firstAttribute="centerY" secondItem="M7b-z6-hhU" secondAttribute="centerY" constant="-13.5" id="Jlv-TD-pDK"/>
+                            <constraint firstItem="yjA-rP-J5I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="116" id="Kv3-H0-lRE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M7b-z6-hhU" secondAttribute="bottom" constant="8" id="KxG-t2-kTN"/>
+                            <constraint firstItem="M7b-z6-hhU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nwd-wF-gaa"/>
+                            <constraint firstItem="Gh6-PP-bRO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="Pxk-zl-ddY"/>
+                            <constraint firstItem="Gh6-PP-bRO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5.5" id="U1q-bQ-xm0"/>
+                            <constraint firstItem="apr-6d-m8R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-13.5" id="XCK-9S-71A"/>
+                            <constraint firstItem="yjA-rP-J5I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XF4-tB-ymj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M7b-z6-hhU" secondAttribute="trailing" constant="87" id="YVJ-XK-5k2"/>
+                            <constraint firstItem="84X-Ni-5B9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="9:16" id="dbD-sD-vr0"/>
+                            <constraint firstItem="84X-Ni-5B9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="eXb-0J-2lA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M7b-z6-hhU" secondAttribute="bottom" constant="8" id="gVO-0D-5xK"/>
+                            <constraint firstItem="M7b-z6-hhU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="87" id="rHW-jS-QNQ"/>
+                            <constraint firstItem="84X-Ni-5B9" firstAttribute="centerX" secondItem="M7b-z6-hhU" secondAttribute="centerX" id="u2H-Fm-o9E"/>
+                            <constraint firstItem="apr-6d-m8R" firstAttribute="top" secondItem="yjA-rP-J5I" secondAttribute="bottom" constant="-184" id="vAa-9q-SD1"/>
+                            <constraint firstItem="M7b-z6-hhU" firstAttribute="top" secondItem="apr-6d-m8R" secondAttribute="bottom" constant="73" id="wk9-Zn-WeS"/>
+                            <constraint firstItem="M7b-z6-hhU" firstAttribute="top" secondItem="yin-UT-tG8" secondAttribute="bottom" constant="-107" id="y4j-pq-9zP"/>
+                            <constraint firstItem="84X-Ni-5B9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ynv-x5-xW5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="d8u-h6-wOW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Achievement" destination="yjA-rP-J5I" id="eLY-Mb-Eum"/>
+                        <outlet property="Artist" destination="apr-6d-m8R" id="LkQ-qN-wRD"/>
+                        <outlet property="Level" destination="APJ-AD-0GO" id="Pu6-qa-SN2"/>
+                        <outlet property="clockTime" destination="7VP-5v-eKS" id="a0r-qo-V9J"/>
+                        <outlet property="drawButton" destination="M7b-z6-hhU" id="iCg-eO-A3B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="226"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OGq-u9-xFG">
+            <objects>
+                <viewController id="lGl-f6-G8h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0qg-IC-E5u"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccj-81-Kta"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L4E-FP-J2A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Cj-gr-eH0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="transparentbkg" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-To-V2o">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="dXQ-Ta-Pkv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agG-AC-q12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="226"/>
+        </scene>
+        <!--Prompts-->
+        <scene sceneID="4qY-sG-WOM">
+            <objects>
+                <navigationController title="Prompts" automaticallyAdjustsScrollViewInsets="NO" id="EtR-7b-PpJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xJg-47-6v0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t4G-Ao-iMq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSB-5Q-fQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="226"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="artistlevel4crop" width="492" height="681"/>
+        <image name="buttoncrop" width="783" height="718"/>
+        <image name="starvingartistbar1" width="1536" height="2048"/>
+        <image name="starvingartistbkg2" width="1536" height="2048"/>
+        <image name="targetcrop" width="1536" height="2048"/>
+        <image name="transparentbkg" width="395" height="527"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dXQ-Ta-Pkv"/>
+    </inferredMetricsTieBreakers>
+</document>
